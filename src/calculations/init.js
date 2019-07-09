@@ -16,7 +16,7 @@ const init = ({ row, col }, numOfColor) => {
   // Part I: Introduce valid move first
 
   // Step 1: Randomly generate a valid move control center
-  // The valid move control center can be any cell except those on the board perimeter
+  // The valid move control center can be any cells except those on the board perimeter
   const validMoveCenter = [randomGen(1, row - 1), randomGen(1, col - 1)];
   // Step 2: Generate three cells that provide a valid move
   // See calculationHelpers/validMoveGen.js for more details
@@ -35,7 +35,10 @@ const init = ({ row, col }, numOfColor) => {
         // Make sure no line-up happens
         // The number of color needs to be at least 3 to avoid infinite loop here
         while (isLineUpAny(initState, i, j)) {
-          // The approach of using while loop could potentially be improved
+          // Note 1: The condition of this while loop could be improved by only checking
+          // cells with isLineUpLeft and isLineUpAbove, when the cells are not
+          // affected by those valid move cells created on part I.
+          // Note 2: The approach of using while loop could potentially be improved
           initState[i][j] = randomGen(0, numOfColor);
         }
       }

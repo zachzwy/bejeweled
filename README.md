@@ -18,6 +18,7 @@
 5. User can regenerate a new board, by clicking a button or refreshing;
 
 ### File Structure
+
 ```
 ...
 src
@@ -27,9 +28,9 @@ src
 │
 ├── calculations
 │   ├── init.js               # Initialize a 2D array representing the game board
-│   ├── isLineUp.js           # Check if a cell is line-up with its adjacent cells
+│   ├── isLineUp.js           # Check if a cell lines-up with its adjacent cells
 │   ├── isValidCell.js        # Check if a cell is in boundary
-│   ├── randomGen.js          # Generate a random integer 
+│   ├── randomGen.js          # Generate a random integer
 │   └── validMoveGen.js       # Generate three cells that provide a valid move
 │
 ├── index.js
