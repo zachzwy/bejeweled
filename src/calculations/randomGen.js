@@ -2,7 +2,8 @@
  * Generate random integer from min to max
  * including min, excluding max.
  * Both min and max should be integer
- * @param {number} num
+ * @param {number} min
+ * @param {number} max
  * @return {number}
  */
 

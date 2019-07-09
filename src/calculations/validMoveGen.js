@@ -4,8 +4,8 @@ import randomGen from "./randomGen";
  * Given the cordinate of the valid move control center,
  * generate three cells that provide a valid move.
  *
- * To make sure valid move exists, consider in a reverse engineering manner.
- * Starting from two basic versions of "line-up": three cells have
+ * To make sure valid move exists, consider it in a reverse engineering manner.
+ * Start from two basic versions of "line-up": three adjacent cells with
  * the same color vertically / horizontally.
  *
  * And then swap one of the cell with its neighbour. Each version
