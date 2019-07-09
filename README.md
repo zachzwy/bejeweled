@@ -28,16 +28,11 @@ src
 ├── calculations
 │   ├── init.js               # Initialize a 2D array representing the game board
 │   ├── isLineUp.js           # Check if a cell is line-up with its adjacent cells
+│   ├── isValidCell.js        # Check if a cell is in boundary
+│   ├── randomGen.js          # Generate a random integer 
 │   └── validMoveGen.js       # Generate three cells that provide a valid move
 │
-├── calculationHelpers
-│   ├── index.js
-│   ├── isAdjacent.js         # Check if two cells are adjacent cells
-│   ├── isValidCell.js        # Check if a cell is in boundary
-│   └── randomGen.js          # Generate a random integer   
-│
 ├── index.js
-│
 └── style.css
 
 ...

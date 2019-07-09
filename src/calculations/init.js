@@ -1,5 +1,5 @@
 import { isLineUpAny } from "./isLineUp";
-import { randomGen } from "../calculationHelpers";
+import randomGen from "./randomGen";
 import validMoveGen from "./validMoveGen";
 
 /**
@@ -16,12 +16,12 @@ const init = ({ row, col }, numOfColor) => {
   // Part I: Introduce valid move first
 
   // Step 1: Randomly generate a valid move control center
-  // The valid move control center can be any cell except those on the perimeter
+  // The valid move control center can be any cell except those on the board perimeter
   const validMoveCenter = [randomGen(1, row - 1), randomGen(1, col - 1)];
   // Step 2: Randomly generate a color
   const validColor = randomGen(0, numOfColor);
   // Step 3: Generate three cells that provide a valid move
-  // See calculationsHelper/validMoveGen.js for more details
+  // See calculationHelpers/validMoveGen.js for more details
   const validMoveCells = validMoveGen(validMoveCenter);
   // Step 4: In the initState array, set the color value on those three cells accordingly
   validMoveCells.forEach(([row, col]) => (initState[row][col] = validColor));

@@ -1,4 +1,4 @@
-import { isValidCell } from "../calculationHelpers";
+import isValidCell from "./isValidCell";
 
 /**
  * Check if a cell lines-up with the two adjacent cells

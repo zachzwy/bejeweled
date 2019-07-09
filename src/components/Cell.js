@@ -1,6 +1,6 @@
 import React from "react";
 
-// Use a const COLOR object to map from interger to color
+// Use a const COLOR object to map from integer to color
 const COLOR = {
   0: "red",
   1: "yellow",
