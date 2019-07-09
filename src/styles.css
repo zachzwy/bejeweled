@@ -1,0 +1,34 @@
+/*
+ * Note:
+ * 1. Opt out to use any third party library to gain more control of styling
+ */
+
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  padding: 20px;
+}
+
+table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+td {
+  width: 30px;
+  height: 30px;
+}
+
+.cell {
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  position: relative;
+  top: 10px;
+}
