@@ -6,7 +6,7 @@
 > git clone https://github.com/zachzwy/bejeweled.git
 > cd bejeweled
 > npm install
-> npm run
+> npm run start
 ```
 
 ### Minimum features:

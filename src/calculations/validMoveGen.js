@@ -10,7 +10,7 @@ import { randomGen } from "../calculationHelpers";
  *
  * And then swap one of the cell with its neighbour. Each version
  * has 8 ways to swapping, subtracting two of them that requires
- * 4 cells in a row. So it ends up with 12 different ways.
+ * 4 cells in a row/col. So it ends up with 12 different ways.
  *
  * @param {number[]} cell
  * @return {number[][]}
