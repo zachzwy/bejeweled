@@ -31,16 +31,15 @@ const init = ({ row, col }, numOfColor) => {
   for (let i = 0; i < initState.length; i++) {
     for (let j = 0; j < initState[0].length; j++) {
       if (initState[i][j] === undefined) {
-        initState[i][j] = randomGen(0, numOfColor);
         // Make sure no line-up happens
         // The number of color needs to be at least 3 to avoid infinite loop here
-        while (isLineUpAny(initState, i, j)) {
-          // Note 1: The condition of this while loop could be improved by only checking
-          // cells with isLineUpLeft and isLineUpAbove, when the cells are not
-          // affected by those valid move cells created on part I.
-          // Note 2: The approach of using while loop could potentially be improved
+        do {
           initState[i][j] = randomGen(0, numOfColor);
-        }
+        } while (isLineUpAny(initState, i, j));
+        // Note 1: The condition of this while loop could be improved by only checking
+        // cells with isLineUpLeft and isLineUpAbove, when the cells are not
+        // affected by those valid move cells created on part I.
+        // Note 2: The approach of using while loop could potentially be improved
       }
     }
   }
