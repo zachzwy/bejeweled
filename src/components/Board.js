@@ -6,7 +6,8 @@ import init from "../calculations/init";
 const Board = () => {
   // Pull out board dimension and number of color
   // as the component state and the single source of truth
-  // Make them dynamic rather than fixed value
+  // Make them dynamic rather than fixed value,
+  // which also benefits for testing the code
 
   const [dimension, setDimension] = useState({
     row: 8, // The board should be at least 3 by 3

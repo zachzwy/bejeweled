@@ -19,7 +19,7 @@ const init = ({ row, col }, numOfColor) => {
   // The valid move control center can be any cells except those on the board perimeter
   const validMoveCenter = [randomGen(1, row - 1), randomGen(1, col - 1)];
   // Step 2: Generate three cells that provide a valid move
-  // See calculationHelpers/validMoveGen.js for more details
+  // See validMoveGen.js for more details
   const validMoveCells = validMoveGen(validMoveCenter);
   // Step 3: Randomly generate a color
   const colorValue = randomGen(0, numOfColor);

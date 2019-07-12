@@ -6,7 +6,7 @@ import randomGen from "./randomGen";
  *
  * To make sure valid move exists, consider it in a reverse engineering manner.
  * Start from two basic versions of "line-up": three adjacent cells with
- * the same color vertically / horizontally.
+ * the same color vertically/horizontally.
  *
  * And then swap one of the cell with its neighbour. Each version
  * has 8 ways of swapping, subtracting two of them that require
