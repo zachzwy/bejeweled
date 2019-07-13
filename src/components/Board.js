@@ -1,22 +1,17 @@
 import React, { useState } from "react";
 
 import Cell from "./Cell";
-import init from "../calculations/init";
+import init from "../calculations";
 
 const Board = () => {
-  // Pull out board dimension and number of color
-  // as the component state and the single source of truth
-  // Make them dynamic rather than fixed value,
-  // which also benefits for testing the code
-
-  const [dimension, setDimension] = useState({
-    row: 8, // The board should be at least 3 by 3
-    col: 8 // to to satisfy the "line-up" mechanism
-  });
+  const dimension = {
+    row: 3, // The board should be at least 3 by 3
+    col: 3 // to satify the game mechanism
+  };
 
   // There should be at least 3 different colors
   // to generate a board without any "line-up" in its initial state
-  const [numOfColor, setNumOfColor] = useState(7);
+  const numOfColor = 7;
   const [state, setState] = useState(() => init(dimension, numOfColor));
 
   return (
