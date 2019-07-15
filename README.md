@@ -2,10 +2,10 @@
 
 ### Updates
 
-1. Reorganize the file structure to have a more friendly review expreience;
+1. Reorganize the file structure to have a more friendly review experience;
 2. Use const instead of React hook state to represent the board dimension and number of color;
 3. Improve the color generator function to eliminate the worse infinite loop case;
-4. Improve the validMoveGen function to provide more varieties of initial valid move;
+4. Improve the validMoveGen function to provide more varieties of the initial valid moves;
 
 ### How to use:
 
