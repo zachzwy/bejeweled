@@ -218,7 +218,8 @@ const init = ({ row, col }, numOfColor) => {
         // since each loop will remove the color that has been tried
         do {
           colors.splice(seed, 1);
-          initState[i][j] = colors[randomGen(0, colors.length)];
+          seed = randomGen(0, colors.length);
+          initState[i][j] = colors[seed];
         } while (isLineUpAny(initState, i, j));
         // Note: The condition of this while loop could be improved by only checking
         // cells with isLineUpLeft and isLineUpAbove, when the cells are not

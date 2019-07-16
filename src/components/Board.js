@@ -5,8 +5,8 @@ import init from "../calculations";
 
 const Board = () => {
   const dimension = {
-    row: 3, // The board should be at least 3 by 3
-    col: 3 // to satify the game mechanism
+    row: 8, // The board should be at least 3 by 3
+    col: 8 // to satify the game mechanism
   };
 
   // There should be at least 3 different colors
